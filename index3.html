@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>手账菌:分享手账,记录点滴,寻找美好</title>
+		<link media="all" type="text/css" rel="stylesheet" href="bootstrap3.1.1/css/bootstrap.min.css">
+		<link media="all" type="text/css" rel="stylesheet" href="css/style.css">
+		<link media="all" type="text/css" rel="stylesheet" href="css/style3.css">
+		<script src="js/jquery.min.js"></script>
+		<script src="js/backtop.js"></script> 
+	</head>
+	
+	<body>
+		<div class="navbar navbar-default navbar-fixed-top mainhead-navbox" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle mainhead-navbtn" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">菜单导航</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					
+					<div class='navbar-brand'>
+						<div class="praise">
+							<span id="praise"><img src="img/common/qxzan.png" id="praise-img" /></span>
+							<span id="praise-txt">1500</span>
+							<span id="add-num"><em>+1</em></span>
+						</div>
+					</div>
+				</div>
+						<script>
+							$(function(){
+								$("#praise").click(function(){
+									var praise_img = $("#praise-img");
+									var text_box = $("#add-num");
+									var praise_txt = $("#praise-txt");
+									var num=parseInt(praise_txt.text());
+									if(praise_img.attr("src") == ("img/common/zan.png")){
+										$(this).html("<img src='img/common/qxzan.png' id='praise-img' class='animation' />");
+										praise_txt.removeClass("hover");
+										text_box.show().html("<em class='add-animation'>-1</em>");
+										$(".add-animation").removeClass("hover");
+										num -=1;
+										praise_txt.text(num)
+									}else{
+										$(this).html("<img src='img/common/zan.png' id='praise-img' class='animation' />");
+										praise_txt.addClass("hover");
+										text_box.show().html("<em class='add-animation'>+1</em>");
+										$(".add-animation").addClass("hover");
+										num +=1;
+										praise_txt.text(num)
+									}
+								});
+							})
+						</script>
+		
+				<div class="navbar-collapse collapse mainhead-collapse">
+					<ul class="nav mainhead-nav">
+						<li><a href="index.html" title='我们的日常'>日常</a></li>
+						<li><a href="index2.html" title="手账的基本">手账</a></li>
+						<li class='active'><a href="index3.html" title='动手做手账'>教程</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<div class="sectioncon">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-8 col-lg-9 col-xl-9">
+                        <div class="blog">
+                            <h3 class="text">10分钟掌握手帐入门技能</h3>
+                            <p>有人说一入手帐深似海，从此笔纸要随行。</p><br />
+                            <p>在日本，很多人都会随身带着一个被称为“手帐”的笔记本，随时随地掏出来翻翻看，手帐对于日本人而言是不可或缺的生活用品，不仅具有备忘功能，而且是进行人生规划的一个重要工具。</p><br />
+                           	<p>手帐不仅提醒自己记着家人、朋友的生日和约会，还能安排每天的工作，很多人甚至把它当做简短的日记本。</p><br />
+                           	<p>长期的写手帐，会让我们懂得如何去坚持，也许很多做不到的事情，就可以从画手帐中开悟，坚持不懈是最好的精神品质。</p><br />
+                           	<img src="img/img3/1.png" alt="Image" class="img-fluid img-post"><br />
+                           	<p>手帐的存在的意义：</p><br />
+                           	<p>①把你脑袋里混乱的计划和想法记录下来，把大脑清空，专注于眼前的事情。</p><br />
+                           	<p>②记录生活。</p><br />
+                           	<p>说了那么多意义，都不如自己动手体验一番，你觉得呢？</p><br />
+                           	<p>下面有图有真相，一起动手做起来吧~</p><br />
+                           	<img src="img/img3/2.jpg" alt="Image" class="img-fluid img-post"><br />
+                           	<p>X宝有很多漂亮的素材，如果你打算入坑，可以选一选，总有让人惊艳的一款。</p><br />
+                           	<img src="img/img3/3.jpg" alt="Image" class="img-fluid img-post"><br />
+                           	<p>一切准备就绪就可以开始了：</p><br />
+                           	<p>1、手帐本可以买走线合订本，也可以是活页，活页画废了，可以撕下来，但是我喜欢合订的感觉。</p><br />
+                           	<p>2、胶带有很多用处，可以用来装饰、走边。做外围的走边时，注意用剪刀裁剪好边缘。</p><br />
+                           	<p>3、萌萌的贴纸记得多买点，尤其是图小颜色鲜亮的贴纸，不想画就贴吧，哈哈。</p><br />
+                           	<p>4、做手帐一定记得把手洗干净。(*^__^*) </p><br />
+                           	<p>首先设计好封面；</p><br />
+                           	<p>再涂一涂，贴一贴，一张手帐页面诞生了~</p><br />
+                           	<img src="img/img3/4.jpg" alt="Image" class="img-fluid img-post"><br />
+                           	<p>这样萌萌的画面，总想多翻阅几次，会不会多翻阅几次，单词就背熟了？</p><br />
+                           	<p>手帐有绘本手帐、主题手帐、日程手帐等。主题手帐有育儿手帐，讲述育儿成长史；有梦想手帐，记录自己的心路历程；有美食手帐，吃货都想与人分享；有旅行手帐，让流浪的心有个地方可以安放.....这么多主题，总有一款适合你。</p><br />
+                           	<p>当然，在工作中，我们用的多还是日程手帐，工作重点，主要事件，主次划分、会议纪要、一天收获......太多东西需要记录和整理。</p><br />
+                           	<p>如果你的绘画功底不算太好，可以尝试多用贴图，花边胶。只要用心做，你也会拥有一段快乐的慢时光。</p><br />
+                           	<p>年老时，摸过的一本本手册，它们就是你的个人传记，你的编年史。</p><br />
+                           	<p>为了纪念你那闪闪发光的过去，给自己写本传记吧，让未来的你感谢现在的自己。</p><br />
+                        </div>
+					</div>
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 col-xl-3 aside-r">
+                        <div class="aside-container">
+                            <h3 class="title">
+                                                               【手帐get!】
+                            </h3>
+                            <div class="nav-container">
+                                <ul class="nav">
+                                    <li><a href="index3_1.html" class="text-link">教程 | 懒人手帐速成的秘诀！</a></li>
+                                    <li><a href="index3_2.html" class="text-link">教程 | 入门级手帐教程</a></li>
+                                </ul>
+                        	</div>
+						</div>
+                	</div>
+ 				</div>
+        	</div>
+        </div>   
+		
+		
+		
+		
+		
+		<div class="container">
+			<div class="mainfoot center">
+				<p>
+					&copy;2016-2017 手账菌  &nbsp;  &nbsp; <a href='login.html' title='关于手账菌'>关于手账菌</a> &nbsp;  &nbsp; <a href='login.html' title='联系手账菌'>联系手账菌</a>
+				</p>
+				<div class='row'>
+					<div class='row partnerbox'>
+						<a href="login.html" title='手机应用'>手机应用</a> &nbsp;
+						<a href="login.html" title='意见反馈'>意见反馈</a> &nbsp;
+						<a href="login.html" title='联系我们'>联系我们</a>  &nbsp;
+						<a href="login.html" target="_blank" title="使用条款">使用条款</a>  
+					</div>	
+				</div>
+			</div>
+		</div>
+
+		<!--左侧-->
+		<div class="leftside">
+			<a href="login.html" class="way1" title="facebook分享"><img src="img/img1/way01.jpg"  width="50" height="50" /></a>
+			<a href="login.html" class="way2" title="twitter分享"><img src="img/img1/way02.jpg"  width="50" height="50" /></a>
+			<a href="login.html" class="way3" title="Google分享"><img src="img/img1/way03.jpg"  width="50" height="50" /></a>
+			<a href="login.html" class="way4" title="ins分享"><img src="img/img1/way04.jpg"  width="50" height="50" /></a>
+			<a href="login.html" class="way5" title="更多分享方式"><img src="img/img1/way05.jpg"  width="50" height="50" /></a>
+		</div>
+		
+		<!--返回顶部-->
+		<a href="#0" class="cd-top">Top</a>
+		
+		<script src="js/jquery.min.js"></script>
+		<script src="bootstrap3.1.1/js/bootstrap.min.js"></script>
+		
+		<script>
+			$(function(){
+				$('.leftside a').hover(function(){
+					$(this).animate({width:'65px'},300);	
+				},function(){
+				$(this).animate({width:'50px'},300);	
+				});
+			});
+		</script>
+	</body>
+</html>

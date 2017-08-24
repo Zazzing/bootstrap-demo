@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>手账菌:分享手账,记录点滴,寻找美好</title>
+		<link media="all" type="text/css" rel="stylesheet" href="bootstrap3.1.1/css/bootstrap.min.css">
+		<link media="all" type="text/css" rel="stylesheet" href="css/style.css">
+		<link media="all" type="text/css" rel="stylesheet" href="css/style2.css">
+		<script src="js/jquery.min.js"></script>
+		<script src="js/backtop.js"></script> 
+	</head>
+	
+	<body>
+		<div class="navbar navbar-default navbar-fixed-top mainhead-navbox" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle mainhead-navbtn" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">菜单导航</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					
+					<div class='navbar-brand'>
+						<div class="praise">
+							<span id="praise"><img src="img/common/qxzan.png" id="praise-img" /></span>
+							<span id="praise-txt">1500</span>
+							<span id="add-num"><em>+1</em></span>
+						</div>
+					</div>
+				</div>
+						<script>
+							$(function(){
+								$("#praise").click(function(){
+									var praise_img = $("#praise-img");
+									var text_box = $("#add-num");
+									var praise_txt = $("#praise-txt");
+									var num=parseInt(praise_txt.text());
+									if(praise_img.attr("src") == ("img/common/zan.png")){
+										$(this).html("<img src='img/common/qxzan.png' id='praise-img' class='animation' />");
+										praise_txt.removeClass("hover");
+										text_box.show().html("<em class='add-animation'>-1</em>");
+										$(".add-animation").removeClass("hover");
+										num -=1;
+										praise_txt.text(num)
+									}else{
+										$(this).html("<img src='img/common/zan.png' id='praise-img' class='animation' />");
+										praise_txt.addClass("hover");
+										text_box.show().html("<em class='add-animation'>+1</em>");
+										$(".add-animation").addClass("hover");
+										num +=1;
+										praise_txt.text(num)
+									}
+								});
+							})
+						</script>
+		
+				<div class="navbar-collapse collapse mainhead-collapse">
+					<ul class="nav mainhead-nav">
+						<li><a href="index.html" title='我们的日常'>日常</a></li>
+						<li class='active'><a href="index2.html" title="手账的基本">手账</a></li>
+						<li><a href="index3.html" title='动手做手账'>教程</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<div class="content-wrapper">
+			<div class="container">
+				<div class="title">
+					<h1>种草手账 | <a href="login.html">联系</a></h1>
+				</div>
+				<div class="row">
+					<div class="col-md-3 gallery-item">
+						<a href="img/img2/1.jpg"><img src="img/img2/1.jpg" alt="" ></a>
+					</div>
+					<div class="col-md-3 gallery-item">
+						<a href="img/img2/2.jpg" ><img src="img/img2/2.jpg" alt=""></a>
+					</div>
+					<div class="col-md-3 gallery-item">
+						<a href="img/img2/3.jpg" ><img src="img/img2/3.jpg" alt=""></a>
+					</div>
+					<div class="col-md-3 gallery-item">
+						<a href="img/img2/4.jpg" ><img src="img/img2/4.jpg" alt=""></a>
+					</div>
+					<div class="col-md-3 gallery-item">
+						<a href="img/img2/5.jpg" ><img src="img/img2/5.jpg" alt=""></a>
+					</div>
+					<div class="col-md-3 gallery-item">
+						<a href="img/img2/6.jpg" ><img src="img/img2/6.jpg" alt=""></a>
+					</div>
+					<div class="col-md-3 gallery-item">
+						<a href="img/img2/7.jpg" ><img src="img/img2/7.jpg" alt=""></a>
+					</div>
+					<div class="col-md-3 gallery-item">
+						<a href="img/img2/8.jpg" ><img src="img/img2/8.jpg" alt=""></a>
+					</div>
+					<div class="col-md-3 gallery-item">
+						<a href="img/img2/9.jpg" ><img src="img/img2/9.jpg" alt=""></a>
+					</div>
+					<div class="col-md-3 gallery-item">
+						<a href="img/img2/10.jpg" ><img src="img/img2/10.jpg" alt=""></a>
+					</div>
+					<div class="col-md-3 gallery-item">
+						<a href="img/img2/11.jpg" ><img src="img/img2/11.jpg" alt=""></a>
+					</div>
+					<div class="col-md-3 gallery-item">
+						<a href="img/img2/12.jpg" ><img src="img/img2/12.jpg" alt=""></a>
+					</div>
+					<div class="col-md-3 gallery-item">
+						<a href="img/img2/13.jpg" ><img src="img/img2/13.jpg" alt=""></a>
+					</div>
+					<div class="col-md-3 gallery-item">
+						<a href="img/img2/14.jpg" ><img src="img/img2/14.jpg" alt=""></a>
+					</div>
+					<div class="col-md-3 gallery-item">
+						<a href="img/img2/15.jpg" ><img src="img/img2/15.jpg" alt=""></a>
+					</div>
+					<div class="col-md-3 gallery-item">
+						<a href="img/img2/16.jpg" ><img src="img/img2/16.jpg" alt=""></a>
+					</div>
+					<div class="col-md-3 gallery-item">
+						<a href="img/img2/17.jpg" ><img src="img/img2/17.jpg" alt=""></a>
+					</div>
+					<div class="col-md-3 gallery-item">
+						<a href="img/img2/18.jpg" ><img src="img/img2/18.jpg" alt=""></a>
+					</div>
+					<div class="col-md-3 gallery-item">
+						<a href="img/img2/19.jpg" ><img src="img/img2/19.jpg" alt=""></a>
+					</div>
+					<div class="col-md-3 gallery-item">
+						<a href="img/img2/20.jpg" ><img src="img/img2/20.jpg" alt=""></a>
+					</div>
+					<div class="col-md-3 gallery-item">
+						<a href="img/img2/21.jpg" ><img src="img/img2/21.jpg" alt=""></a>
+					</div>
+					<div class="col-md-3 gallery-item">
+						<a href="img/img2/22.jpg" ><img src="img/img2/22.jpg" alt=""></a>
+					</div>
+					<div class="col-md-3 gallery-item">
+						<a href="img/img2/23.jpg" ><img src="img/img2/23.jpg" alt=""></a>
+					</div>
+					<div class="col-md-3 gallery-item">
+						<a href="img/img2/24.jpg" ><img src="img/img2/24.jpg" alt=""></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+				
+		<div class="container">
+			<div class="mainfoot center">
+				<p>
+					&copy;2016-2017 手账菌  &nbsp;  &nbsp; <a href='login.html' title='关于手账菌'>关于手账菌</a> &nbsp;  &nbsp; <a href='login.html' title='联系手账菌'>联系手账菌</a>
+				</p>
+				<div class='row'>
+					<div class='row partnerbox'>
+						<a href="login.html" title='手机应用'>手机应用</a> &nbsp;
+						<a href="login.html" title='意见反馈'>意见反馈</a> &nbsp;
+						<a href="login.html" title='联系我们'>联系我们</a>  &nbsp;
+						<a href="login.html" target="使用条款" title="使用条款">使用条款</a>  
+					</div>	
+				</div>
+			</div>
+		</div>
+
+		<!--左侧-->
+		<div class="leftside">
+			<a href="login.html" class="way1" title="facebook分享"><img src="img/img1/way01.jpg" alt="懒人之家" width="50" height="50" /></a>
+			<a href="login.html" class="way2" title="twitter分享"><img src="img/img1/way02.jpg" alt="懒人之家" width="50" height="50" /></a>
+			<a href="login.html" class="way3" title="Google分享"><img src="img/img1/way03.jpg" alt="懒人之家" width="50" height="50" /></a>
+			<a href="login.html" class="way4" title="ins分享"><img src="img/img1/way04.jpg" alt="懒人之家" width="50" height="50" /></a>
+			<a href="login.html" class="way5" title="更多分享方式"><img src="img/img1/way05.jpg" alt="懒人之家" width="50" height="50" /></a>
+		</div>
+		
+		<!--返回顶部-->
+		<a href="#0" class="cd-top">Top</a>
+		
+		<script src="js/jquery.min.js"></script>
+		<script src="bootstrap3.1.1/js/bootstrap.min.js"></script>
+		
+		<script>
+			$(function(){
+				$('.leftside a').hover(function(){
+					$(this).animate({width:'65px'},300);	
+				},function(){
+				$(this).animate({width:'50px'},300);	
+				});
+			});
+		</script>
+	</body>
+</html>

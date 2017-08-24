@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>手账菌:分享手账,记录点滴,寻找美好</title>
+		<link media="all" type="text/css" rel="stylesheet" href="bootstrap3.1.1/css/bootstrap.min.css">
+		<link media="all" type="text/css" rel="stylesheet" href="css/style.css">
+		<link media="all" type="text/css" rel="stylesheet" href="css/style3.css">
+		<script src="js/jquery.min.js"></script>
+		<script src="js/backtop.js"></script> 
+	</head>
+	
+	<body>
+		<div class="navbar navbar-default navbar-fixed-top mainhead-navbox" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle mainhead-navbtn" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">菜单导航</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					
+					<div class='navbar-brand'>
+						<div class="praise">
+							<span id="praise"><img src="img/common/qxzan.png" id="praise-img" /></span>
+							<span id="praise-txt">1500</span>
+							<span id="add-num"><em>+1</em></span>
+						</div>
+					</div>
+				</div>
+						<script>
+							$(function(){
+								$("#praise").click(function(){
+									var praise_img = $("#praise-img");
+									var text_box = $("#add-num");
+									var praise_txt = $("#praise-txt");
+									var num=parseInt(praise_txt.text());
+									if(praise_img.attr("src") == ("img/common/zan.png")){
+										$(this).html("<img src='img/common/qxzan.png' id='praise-img' class='animation' />");
+										praise_txt.removeClass("hover");
+										text_box.show().html("<em class='add-animation'>-1</em>");
+										$(".add-animation").removeClass("hover");
+										num -=1;
+										praise_txt.text(num)
+									}else{
+										$(this).html("<img src='img/common/zan.png' id='praise-img' class='animation' />");
+										praise_txt.addClass("hover");
+										text_box.show().html("<em class='add-animation'>+1</em>");
+										$(".add-animation").addClass("hover");
+										num +=1;
+										praise_txt.text(num)
+									}
+								});
+							})
+						</script>
+		
+				<div class="navbar-collapse collapse mainhead-collapse">
+					<ul class="nav mainhead-nav">
+						<li><a href="index.html" title='我们的日常'>日常</a></li>
+						<li><a href="index2.html" title="手账的基本">手账</a></li>
+						<li class='active'><a href="index3.html" title='动手做手账'>教程</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<div class="sectioncon">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-8 col-lg-9 col-xl-9">
+                        <div class="blog">
+                            <h3 class="text">入门级手帐教程</h3>
+                            <p>1.手帐入坑第一步：选手帐本</p><br />
+                            <p>俗话说，好的开始是成功的一半，同样，好看实用的手帐本是做出精美手帐的第一步。如果你是一个热爱记录生活的人，那么以下几款手账本类型是你的必备装备。</p><br />
+                            <p>▌时间轴手账本</p><br />
+                            <p>这类手帐本一日一页，内带时间轴，年计划表，月计划表等，可以用来记体重变化、朋友生日、月度花钱计划等，也可以用来记录自己灵光一现的简笔画和日常的细碎事情。</p><br />
+                            <img src="img/img3/6.jpg" alt="Image" class="img-fluid img-post"><br />
+                            <p>▌经典活页本</p><br />
+                            <p>与上面的手帐不同，活页手帐本外表更偏重朴实实用风，有的自带皮质封面更是分分钟让你陷入绅士贵族的幻想中。这类活页本最为重要的特点就是中间有一个十字形的车线，可以按照自己的心意更换内页，涂写属于自己的手帐。</p><br />
+                            <img src="img/img3/7.jpg" alt="Image" class="img-fluid img-post"><br />
+                            <p>▌旅行记录手帐本</p><br />
+                            <p>护照大小的宽度，但可以同时夹好几本内芯，也可以自行购买记账本、空白页本、横线本、方格本等内芯自行mix组成一本自己独有的手帐。一般是供给旅行者用来记录旅行，每到一个国家或地区盖印章用的。当然，你得先攒够旅游的钱。</p><br />
+                            <img src="img/img3/8.jpg" alt="Image" class="img-fluid img-post"><br />
+                            <p>2.手帐入坑第二步：选书写用具</p><br />
+                            <p>选择完手账本的同时，再来说说它的好拍档——笔。纸与笔的高配合度，也能够为记录更添一份品质。</p><br />
+                            <p>▌极细钢笔</p><br />
+                            <p>手帐本材质较好，用极细钢笔写上去不仅不会晕染，而且钢笔字会给手帐带来文艺又复古的感觉。当墨水从笔尖流出，在纸上倾泻，散发出墨香，你才能体会到书写的魅力和成就感。</p><br />
+                            <img src="img/img3/9.jpg" alt="Image" class="img-fluid img-post"><br />
+                            <p>▌自动铅笔</p><br />
+                            <p>喜欢用铅笔记录手账的人可以选择笔身较为纤细，铅芯较细，手感好的自动铅笔，这样长时间使用也不会弄脏手帐本面。</p><br />
+                            <img src="img/img3/10.jpg" alt="Image" class="img-fluid img-post"><br />
+                            <p>▌马克笔</p><br />
+                            <p>马克笔很适合在写手帐时的随手涂鸦哦~尤其是马克笔具有挥发性，很适合一次性快速绘图。即使没有绘画基础，也可以在写完手帐后用马克笔随手创作几个属于你的小表情。</p><br />
+                            <img src="img/img3/11.jpg" alt="Image" class="img-fluid img-post"><br />
+                            <p>3.手帐入坑第三步：选装饰品</p><br />
+                            <p>看到第二步时，可能有人要犯愁了：没有绘画基础，怎么破？这时装饰品们就要闪亮出场，拯救你的手帐了！</p><br />
+                            <p>▌胶带</p><br />
+                            <p>如果不会画画，那么就向胶带求救吧。当然，这里说的胶带可不是家里捆东西的那种普通胶带，而是纸胶带。好好搭配和纸胶带，可以使手帐的美貌度和逼格提升。</p><br />
+                            <img src="img/img3/12.jpg" alt="Image" class="img-fluid img-post"><br />
+                            <p>▌胶带架</p><br />
+                            <p>有了漂亮的胶带，怎么能少了充分体现X格的胶带架呢？快让这些或文艺或可爱的胶带架装饰你的生活吧~</p><br />
+                            <img src="img/img3/13.jpg" alt="Image" class="img-fluid img-post"><br />
+                            <p>▌彩色贴纸</p><br />
+                            <p>贴纸可是手帐装饰物中的战斗机，而且作用不仅限于美化手帐，合理运用贴纸可以起到区分提醒的作用，充分提高记手帐效率。</p><br />
+                            <img src="img/img3/jpg" alt="Image" class="img-fluid img-post"><br />
+                            <p>▌贴纸盒</p><br />
+                            <p>和胶带架一样，也是手帐必不可少的周边套物品，方便收集没用完的零碎贴纸。</p><br />
+                            <img src="img/img3/15.jpg" alt="Image" class="img-fluid img-post"><br />
+                            <p>▌迷你打印机</p><br />
+                            <p>怎么把手机里的照片贴到手帐上呢？这时，你需要一台迷你打印机！占地不大，却可以使你的手帐更加丰富多彩。</p><br />
+                            <img src="img/img3/16.jpg" alt="Image" class="img-fluid img-post"><br />
+                        </div>
+					</div>
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 col-xl-3 aside-r">
+                        <div class="aside-container">
+                            <h3 class="title">
+                                                               【手帐get!】
+                            </h3>
+                            <div class="nav-container">
+                                <ul class="nav">
+                                    <li><a href="index3_1.html" class="text-link">教程 | 懒人手帐速成的秘诀！</a></li>
+                                    <li><a href="index3.html" class="text-link">教程 | 10分钟掌握手帐入门技能</a></li>
+                                </ul>
+                        	</div>
+						</div>
+                	</div>
+ 				</div>
+        	</div>
+        </div>   
+		
+		
+		<div class="container">
+			<div class="mainfoot center">
+				<p>
+					&copy;2016-2017 手账菌  &nbsp;  &nbsp; <a href='login.html' title='关于手账菌'>关于手账菌</a> &nbsp;  &nbsp; <a href='login.html' title='联系手账菌'>联系手账菌</a>
+				</p>
+				<div class='row'>
+					<div class='row partnerbox'>
+						<a href="login.html" title='手机应用'>手机应用</a> &nbsp;
+						<a href="login.html" title='意见反馈'>意见反馈</a> &nbsp;
+						<a href="login.html" title='联系我们'>联系我们</a>  &nbsp;
+						<a href="login.html" target="_blank" title="使用条款">使用条款</a>  
+					</div>	
+				</div>
+			</div>
+		</div>
+
+		<!--左侧-->
+		<div class="leftside">
+			<a href="login.html" class="way1" title="facebook分享"><img src="img/img1/way01.jpg"  width="50" height="50" /></a>
+			<a href="login.html" class="way2" title="twitter分享"><img src="img/img1/way02.jpg"  width="50" height="50" /></a>
+			<a href="login.html" class="way3" title="Google分享"><img src="img/img1/way03.jpg"  width="50" height="50" /></a>
+			<a href="login.html" class="way4" title="ins分享"><img src="img/img1/way04.jpg" width="50" height="50" /></a>
+			<a href="login.html" class="way5" title="更多分享方式"><img src="img/img1/way05.jpg"  width="50" height="50" /></a>
+		</div>
+		
+		<!--返回顶部-->
+		<a href="#0" class="cd-top">Top</a>
+		
+		<script src="js/jquery.min.js"></script>
+		<script src="bootstrap3.1.1/js/bootstrap.min.js"></script>
+		
+		<script>
+			$(function(){
+				$('.leftside a').hover(function(){
+					$(this).animate({width:'65px'},300);	
+				},function(){
+				$(this).animate({width:'50px'},300);	
+				});
+			});
+		</script>
+	</body>
+</html>

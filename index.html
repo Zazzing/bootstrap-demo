@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>手账菌:分享手账,记录点滴,寻找美好</title>
+		<link media="all" type="text/css" rel="stylesheet" href="bootstrap3.1.1/css/bootstrap.min.css">
+		<link media="all" type="text/css" rel="stylesheet" href="css/style.css">
+		<script src="js/jquery.min.js"></script>
+		<script src="js/backtop.js"></script> 
+	</head>
+	
+	<body>
+		<div class="navbar navbar-default navbar-fixed-top mainhead-navbox" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle mainhead-navbtn" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">菜单导航</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					
+					<div class='navbar-brand'>
+						<div class="praise">
+							<span id="praise"><img src="img/common/qxzan.png" id="praise-img" /></span>
+							<span id="praise-txt">1500</span>
+							<span id="add-num"><em>+1</em></span>
+						</div>
+					</div>
+				</div>
+						<!--点赞或取消点赞-->
+						<script>
+							$(function(){
+								$("#praise").click(function(){
+									var praise_img = $("#praise-img");
+									var text_box = $("#add-num");
+									var praise_txt = $("#praise-txt");
+									var num=parseInt(praise_txt.text());
+									if(praise_img.attr("src") == ("img/common/zan.png")){
+										$(this).html("<img src='img/common/qxzan.png' id='praise-img' class='animation' />");
+										praise_txt.removeClass("hover");
+										text_box.show().html("<em class='add-animation'>-1</em>");
+										$(".add-animation").removeClass("hover");
+										num -=1;
+										praise_txt.text(num)
+									}else{
+										$(this).html("<img src='img/common/zan.png' id='praise-img' class='animation' />");
+										praise_txt.addClass("hover");
+										text_box.show().html("<em class='add-animation'>+1</em>");
+										$(".add-animation").addClass("hover");
+										num +=1;
+										praise_txt.text(num)
+									}
+								});
+							})
+						</script>
+		
+				<div class="navbar-collapse collapse mainhead-collapse">
+					<ul class="nav mainhead-nav">
+						<li class='active'><a href="#" title='我们的日常'>日常</a></li>
+						<li><a href="index2.html" title="手账的基本">手账</a></li>
+						<li><a href="index3.html" title='动手做手账'>教程</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<div class='mainhead clearfix bg-white padding-b20'>
+			<div class="container">
+				<div class='clearfix center logbox'>
+					<img src="img/common/logo.png" width="100" height="60" alt="logo">
+				</div>
+
+				<div class='row sloganbox'>
+					<div class='col-xs-8 col-xs-offset-2 center'>
+						<p>文艺有瘾：原谅我放荡不羁爱手账，原谅我随身记事走四方</p>
+						<p>主人~快带我回家吧</p>
+						<a href='login.html' class='btn btn-hero btn-lg radius-2 margin-t10 no-decoration'>加入手账菌 &rsaquo;&rsaquo;</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class='clearfix maincontent ' style='background:#f4f3f1;'>
+			<div class="container">
+				<div class="mainbody padding-t20">
+					<div class='row'>
+						<div class='col-xs-6 col-sm-3 margin-b20 '>
+							<div class='thumbnail radius-0 border-0 margin-b0'>
+								<img src="img/img1/大力水手.jpg" alt="大力水手">
+							</div>
+							<div class='row margin-t0 iteminfo'>
+								<div class='col-xs-7 text-left'>
+									<span>大力水手</span>
+								</div>
+								<div class='col-xs-5 text-right'>
+									<span class='glyphicon glyphicon-heart'></span> 151 
+									<span class='hidden-sm hidden-xs'> &nbsp; 
+										<span class='glyphicon glyphicon-comment'></span> 21
+									</span>
+								</div>
+							</div>
+						</div>
+										
+						<div class='col-xs-6 col-sm-3 margin-b20 '>
+							<div class='thumbnail radius-0 border-0 margin-b0'>
+								<img src="img/img1/Benedict.jpg" alt="Benedict Cumberbatch">
+							</div>
+							<div class='row margin-t0 iteminfo'>
+								<div class='col-xs-7 text-left'>
+									<span>Benedict C...</span>
+								</div>
+								<div class='col-xs-5 text-right'>
+									<span class='glyphicon glyphicon-heart'></span> 49 
+									<span class='hidden-sm hidden-xs'> &nbsp; 
+										<span class='glyphicon glyphicon-comment'></span> 8
+									</span>
+								</div>
+							</div>
+						</div>
+					
+						<div class='clearfix visible-xs'></div>
+					
+						<div class='col-xs-6 col-sm-3 margin-b20 '>
+							<div class='thumbnail radius-0 border-0 margin-b0'>
+								<img src="img/img1/睡觉.jpg" alt="睡觉">
+							</div>
+							<div class='row margin-t0 iteminfo'>
+								<div class='col-xs-7 text-left'>
+									<span>睡觉</span>
+								</div>
+								<div class='col-xs-5 text-right'>
+									<span class='glyphicon glyphicon-heart'></span> 342 
+									<span class='hidden-sm hidden-xs'> &nbsp; 
+										<span class='glyphicon glyphicon-comment'></span> 70
+									</span>
+								</div>
+							</div>
+						</div>
+			
+						<div class='col-xs-6 col-sm-3 margin-b20 '>
+							<div class='thumbnail radius-0 border-0 margin-b0'>
+								<img src="img/img1/美剧.jpg" alt="美剧">
+							</div>
+							<div class='row margin-t0 iteminfo'>
+								<div class='col-xs-7 text-left'>
+									<span>美剧</span>
+								</div>
+								<div class='col-xs-5 text-right'>
+									<span class='glyphicon glyphicon-heart'></span> 53 
+									<span class='hidden-sm hidden-xs'> &nbsp; 
+										<span class='glyphicon glyphicon-comment'></span> 14
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				
+					<div class='row'>
+						<div class='col-xs-6 col-sm-3 margin-b20 '>
+							<div class='thumbnail radius-0 border-0 margin-b0'>
+								<img src="img/img1/顺畅的.jpg" alt="顺畅的大便">
+							</div>
+							<div class='row margin-t0 iteminfo'>
+								<div class='col-xs-7 text-left'>
+									<span>顺畅的大便</span>
+								</div>
+								<div class='col-xs-5 text-right'>
+									<span class='glyphicon glyphicon-heart'></span> 405 
+									<span class='hidden-sm hidden-xs'> &nbsp; 
+										<span class='glyphicon glyphicon-comment'></span> 109
+									</span>
+								</div>
+							</div>
+						</div>
+					
+						<div class='col-xs-6 col-sm-3 margin-b20 '>
+							<div class='thumbnail radius-0 border-0 margin-b0'>
+								<img src="img/img1/踩单车.jpg" alt="踩单车">
+							</div>
+							<div class='row margin-t0 iteminfo'>
+								<div class='col-xs-7 text-left'>
+									<span>踩单车</span>
+								</div>
+								<div class='col-xs-5 text-right'>
+									<span class='glyphicon glyphicon-heart'></span> 62 
+									<span class='hidden-sm hidden-xs'> &nbsp; 
+										<span class='glyphicon glyphicon-comment'></span> 15
+									</span>
+								</div>
+							</div>
+						</div>
+						<div class='clearfix visible-xs'></div>
+						<div class='col-xs-6 col-sm-3 margin-b20 '>
+							<div class='thumbnail radius-0 border-0 margin-b0'>
+								<img src="img/img1/新垣结衣.jpg" alt="新垣结衣">
+							</div>
+							<div class='row margin-t0 iteminfo'>
+								<div class='col-xs-7 text-left'>
+									<span>新垣结衣</span>
+								</div>
+								<div class='col-xs-5 text-right'>
+									<span class='glyphicon glyphicon-heart'></span> 72 
+									<span class='hidden-sm hidden-xs'> &nbsp; 
+										<span class='glyphicon glyphicon-comment'></span> 16
+									</span>
+								</div>
+							</div>
+						</div>
+				
+						<div class='col-xs-6 col-sm-3 margin-b20 '>
+							<div class='thumbnail radius-0 border-0 margin-b0'>
+								<img src="img/img1/cranberries.jpg" alt="cranberries">
+							</div>
+							<div class='row margin-t0 iteminfo'>
+								<div class='col-xs-7 text-left'>
+									<span>cranberries</span>
+								</div>
+								<div class='col-xs-5 text-right'>
+									<span class='glyphicon glyphicon-heart'></span> 30 
+									<span class='hidden-sm hidden-xs'> &nbsp; 
+										<span class='glyphicon glyphicon-comment'></span> 8
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class='row'>				
+						<div class='col-xs-6 col-sm-3 margin-b20 '>
+							<div class='thumbnail radius-0 border-0 margin-b0'>
+								<img src="img/img1/养生.jpg" alt="养生">
+							</div>
+							<div class='row margin-t0 iteminfo'>
+								<div class='col-xs-7 text-left'>
+									<span>养生</span>
+								</div>
+								<div class='col-xs-5 text-right'>
+									<span class='glyphicon glyphicon-heart'></span> 120 
+									<span class='hidden-sm hidden-xs'> &nbsp; 
+										<span class='glyphicon glyphicon-comment'></span> 35
+									</span>
+								</div>
+							</div>
+						</div>
+			
+						<div class='col-xs-6 col-sm-3 margin-b20 '>
+							<div class='thumbnail radius-0 border-0 margin-b0'>
+								<img src="img/img1/奈良美智.jpg" alt="奈良美智">
+							</div>
+							<div class='row margin-t0 iteminfo'>
+								<div class='col-xs-7 text-left'>
+									<span>奈良美智</span>
+								</div>
+								<div class='col-xs-5 text-right'>
+									<span class='glyphicon glyphicon-heart'></span> 19 
+									<span class='hidden-sm hidden-xs'> &nbsp; 
+										<span class='glyphicon glyphicon-comment'></span> 4
+									</span>
+								</div>
+							</div>
+						</div>
+						<div class='clearfix visible-xs'></div>						  					
+						<div class='col-xs-6 col-sm-3 margin-b20 '>
+							<div class='thumbnail radius-0 border-0 margin-b0'>
+								<img src="img/img1/Macbook Pro.jpg" alt="Macbook Pro">
+							</div>
+							<div class='row margin-t0 iteminfo'>
+								<div class='col-xs-7 text-left'>
+									<span>Macbook Pro</span>
+								</div>
+								<div class='col-xs-5 text-right'>
+									<span class='glyphicon glyphicon-heart'></span> 7 
+									<span class='hidden-sm hidden-xs'> &nbsp; 
+										<span class='glyphicon glyphicon-comment'></span> 3
+									</span>
+								</div>
+							</div>
+						</div>	
+						<div class='col-xs-6 col-sm-3 margin-b20 '>
+							<div class='thumbnail radius-0 border-0 margin-b0'>
+								<img src="img/img1/麻辣香锅.jpg" alt="麻辣香锅">
+							</div>
+							<div class='row margin-t0 iteminfo'>
+								<div class='col-xs-7 text-left'>
+									<span>麻辣香锅</span>
+								</div>
+								<div class='col-xs-5 text-right'>
+									<span class='glyphicon glyphicon-heart'></span> 80 
+									<span class='hidden-sm hidden-xs'> &nbsp; 
+										<span class='glyphicon glyphicon-comment'></span> 10
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class='row'>
+						<div class='col-xs-6 col-sm-3 margin-b20 '>
+							<div class='thumbnail radius-0 border-0 margin-b0'>
+								<img src="img/img1/Usavich.jpg" alt="Usavich">
+							</div>
+							<div class='row margin-t0 iteminfo'>
+								<div class='col-xs-7 text-left'>
+									<span>Usavich</span>
+								</div>
+								<div class='col-xs-5 text-right'>
+									<span class='glyphicon glyphicon-heart'></span> 40 
+									<span class='hidden-sm hidden-xs'> &nbsp; 
+										<span class='glyphicon glyphicon-comment'></span> 13
+									</span>
+								</div>
+							</div>
+						</div>
+						
+						<div class='col-xs-6 col-sm-3 margin-b20 '>
+							<div class='thumbnail radius-0 border-0 margin-b0'>
+								<img src="img/img1/大片的稻田.jpg" alt="大片的稻田">
+							</div>
+							<div class='row margin-t0 iteminfo'>
+								<div class='col-xs-7 text-left'>
+									<span>大片的稻田</span>
+								</div>
+								<div class='col-xs-5 text-right'>
+									<span class='glyphicon glyphicon-heart'></span> 45 
+									<span class='hidden-sm hidden-xs'> &nbsp; 
+										<span class='glyphicon glyphicon-comment'></span> 8
+									</span>
+								</div>
+							</div>
+						</div>
+						<div class='clearfix visible-xs'></div>
+						<div class='col-xs-6 col-sm-3 margin-b20 '>
+							<div class='thumbnail radius-0 border-0 margin-b0'>
+								<img src="img/img1/减肥.jpg" alt="减肥">
+							</div>
+							<div class='row margin-t0 iteminfo'>
+								<div class='col-xs-7 text-left'>
+									<span>减肥</span>
+								</div>
+								<div class='col-xs-5 text-right'>
+									<span class='glyphicon glyphicon-heart'></span> 46 
+									<span class='hidden-sm hidden-xs'> &nbsp; 
+										<span class='glyphicon glyphicon-comment'></span> 18
+									</span>
+								</div>
+							</div>
+						</div>
+						
+						<div class='col-xs-6 col-sm-3 margin-b20 '>
+							<div class='thumbnail radius-0 border-0 margin-b0'>
+								<img src="img/img1/夏目友人帐.jpg" alt="夏目友人帐">
+							</div>
+							<div class='row margin-t0 iteminfo'>
+								<div class='col-xs-7 text-left'>
+									<span>夏目友人帐</span>
+								</div>
+								<div class='col-xs-5 text-right'>
+									<span class='glyphicon glyphicon-heart'></span> 112 
+									<span class='hidden-sm hidden-xs'> &nbsp; 
+										<span class='glyphicon glyphicon-comment'></span> 36
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class='row'>
+						<div class='col-xs-6 col-sm-3 margin-b20 '>
+							<div class='thumbnail radius-0 border-0 margin-b0'>
+								<img src="img/img1/冰淇淋.jpg" alt="冰淇淋">
+							</div>
+							<div class='row margin-t0 iteminfo'>
+								<div class='col-xs-7 text-left'>
+									<span>冰淇淋</span>
+								</div>
+								<div class='col-xs-5 text-right'>
+									<span class='glyphicon glyphicon-heart'></span> 552 
+									<span class='hidden-sm hidden-xs'> &nbsp; 
+										<span class='glyphicon glyphicon-comment'></span> 87
+									</span>
+								</div>
+							</div>
+						</div>
+					
+						<div class='col-xs-6 col-sm-3 margin-b20 '>
+							<div class='thumbnail radius-0 border-0 margin-b0'>
+								<img src="img/img1/棉布质玩偶.jpg" alt="棉布质玩偶">
+							</div>
+							<div class='row margin-t0 iteminfo'>
+								<div class='col-xs-7 text-left'>
+									<span>棉布质玩偶</span>
+								</div>
+								<div class='col-xs-5 text-right'>
+									<span class='glyphicon glyphicon-heart'></span> 667 
+									<span class='hidden-sm hidden-xs'> &nbsp; 
+										<span class='glyphicon glyphicon-comment'></span> 70
+									</span>
+								</div>
+							</div>
+						</div>
+						<div class='clearfix visible-xs'></div>
+						<div class='col-xs-6 col-sm-3 margin-b20 '>
+							<div class='thumbnail radius-0 border-0 margin-b0'>
+								<img src="img/img1/自己的小床.jpg" alt="自己的小床">
+							</div>
+							<div class='row margin-t0 iteminfo'>
+								<div class='col-xs-7 text-left'>
+									<span>自己的小床</span>
+								</div>
+								<div class='col-xs-5 text-right'>
+									<span class='glyphicon glyphicon-heart'></span> 835 
+									<span class='hidden-sm hidden-xs'> &nbsp; 
+										<span class='glyphicon glyphicon-comment'></span> 120
+									</span>
+								</div>
+							</div>
+						</div>
+						
+						<div class='col-xs-6 col-sm-3 margin-b20 '>
+							<div class='thumbnail radius-0 border-0 margin-b0'>
+								<img src="img/img1/音乐.jpg" alt="音乐">
+							</div>
+							<div class='row margin-t0 iteminfo'>
+								<div class='col-xs-7 text-left'>
+									<span>音乐</span>
+								</div>
+								<div class='col-xs-5 text-right'>
+									<span class='glyphicon glyphicon-heart'></span> 235 
+									<span class='hidden-sm hidden-xs'> &nbsp; 
+										<span class='glyphicon glyphicon-comment'></span> 32
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class='row'>
+						<div class='col-xs-6 col-sm-3 margin-b20 '>
+							<div class='thumbnail radius-0 border-0 margin-b0'>
+								<img src="img/img1/上课睡觉.jpg" alt="上课睡觉">
+							</div>
+							<div class='row margin-t0 iteminfo'>
+								<div class='col-xs-7 text-left'>
+									<span>上课睡觉</span>
+								</div>
+								<div class='col-xs-5 text-right'>
+									<span class='glyphicon glyphicon-heart'></span> 914 
+									<span class='hidden-sm hidden-xs'> &nbsp; 
+										<span class='glyphicon glyphicon-comment'></span> 207
+									</span>
+								</div>
+							</div>
+						</div>
+						
+						<div class='col-xs-6 col-sm-3 margin-b20 '>
+							<div class='thumbnail radius-0 border-0 margin-b0'>
+								<img src="img/img1/高跟鞋.jpg" alt="高跟鞋">
+							</div>
+							<div class='row margin-t0 iteminfo'>
+								<div class='col-xs-7 text-left'>
+									<span>高跟鞋</span>
+								</div>
+								<div class='col-xs-5 text-right'>
+									<span class='glyphicon glyphicon-heart'></span> 103 
+									<span class='hidden-sm hidden-xs'> &nbsp; 
+										<span class='glyphicon glyphicon-comment'></span> 29
+									</span>
+								</div>
+							</div>
+						</div>
+						<div class='clearfix visible-xs'></div>
+						<div class='col-xs-6 col-sm-3 margin-b20 '>
+							<div class='thumbnail radius-0 border-0 margin-b0'>
+								<img src="img/img1/手嶌葵.jpg" alt="手嶌葵">
+							</div>
+							<div class='row margin-t0 iteminfo'>
+								<div class='col-xs-7 text-left'>
+									<span>手嶌葵</span>
+								</div>
+								<div class='col-xs-5 text-right'>
+									<span class='glyphicon glyphicon-heart'></span> 30 
+									<span class='hidden-sm hidden-xs'> &nbsp; 
+										<span class='glyphicon glyphicon-comment'></span> 2
+									</span>
+								</div>
+							</div>
+						</div>
+						
+						<div class='col-xs-6 col-sm-3 margin-b20 '>
+							<div class='thumbnail radius-0 border-0 margin-b0'>
+								<img src="img/img1/发呆.jpg" alt="发呆">
+							</div>
+							<div class='row margin-t0 iteminfo'>
+								<div class='col-xs-7 text-left'>
+									<span>发呆</span>
+								</div>
+								<div class='col-xs-5 text-right'>
+									<span class='glyphicon glyphicon-heart'></span> 1013 
+									<span class='hidden-sm hidden-xs'> &nbsp; 
+										<span class='glyphicon glyphicon-comment'></span> 186
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class='row'>
+						<div class='col-xs-6 col-sm-3 margin-b20 '>
+							<div class='thumbnail radius-0 border-0 margin-b0'>
+								<img src="img/img1/啤酒.jpg" alt="啤酒">
+							</div>
+							<div class='row margin-t0 iteminfo'>
+								<div class='col-xs-7 text-left'>
+									<span>啤酒</span>
+								</div>
+								<div class='col-xs-5 text-right'>
+									<span class='glyphicon glyphicon-heart'></span> 237 
+									<span class='hidden-sm hidden-xs'> &nbsp; 
+										<span class='glyphicon glyphicon-comment'></span> 72
+									</span>
+								</div>
+							</div>
+						</div>
+						
+						<div class='col-xs-6 col-sm-3 margin-b20 '>
+							<div class='thumbnail radius-0 border-0 margin-b0'>
+								<img src="img/img1/逛书店.jpg" alt="逛书店">
+							</div>
+							<div class='row margin-t0 iteminfo'>
+								<div class='col-xs-7 text-left'>
+									<span>逛书店</span>
+								</div>
+								<div class='col-xs-5 text-right'>
+									<span class='glyphicon glyphicon-heart'></span> 287 
+									<span class='hidden-sm hidden-xs'> &nbsp; 
+										<span class='glyphicon glyphicon-comment'></span> 52
+									</span>
+								</div>
+							</div>
+						</div>
+						<div class='clearfix visible-xs'></div>
+						
+						<div class='col-xs-6 col-sm-3 margin-b20 '>
+							<div class='thumbnail radius-0 border-0 margin-b0'>
+								<img src="img/img1/Tizzy bac.jpg" alt="Tizzy bac">
+							</div>
+							<div class='row margin-t0 iteminfo'>
+								<div class='col-xs-7 text-left'>
+									<span>Tizzy bac</span>
+								</div>
+								<div class='col-xs-5 text-right'>
+									<span class='glyphicon glyphicon-heart'></span> 24 
+									<span class='hidden-sm hidden-xs'> &nbsp; 
+										<span class='glyphicon glyphicon-comment'></span> 8
+									</span>
+								</div>
+							</div>
+						</div>
+						
+						<div class='col-xs-6 col-sm-3 margin-b20 '>
+							<div class='thumbnail radius-0 border-0 margin-b0'>
+								<img src="img/img1/巧克力.jpg" alt="巧克力">
+							</div>
+							<div class='row margin-t0 iteminfo'>
+								<div class='col-xs-7 text-left'>
+									<span>巧克力</span>
+								</div>
+								<div class='col-xs-5 text-right'>
+									<span class='glyphicon glyphicon-heart'></span> 646 
+									<span class='hidden-sm hidden-xs'> &nbsp; 
+										<span class='glyphicon glyphicon-comment'></span> 106
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+		   			
+		   			<div class='row center margin20'>
+						<a href="login.html"  class='btn btn-gray btn-lg radius-2 margin-t10 no-decoration'>发现更多 &rsaquo;&rsaquo;</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="container">
+			<div class="mainfoot center">
+				<p>
+					&copy;2016-2017 手账菌  &nbsp;  &nbsp; <a href='login.html' title='关于手账菌'>关于手账菌</a> &nbsp;  &nbsp; <a href='login.html' title='联系手账菌'>联系手账菌</a>
+				</p>
+				<div class='row'>
+					<div class='row partnerbox'>
+						<a href="login.html" title='手机应用'>手机应用</a> &nbsp;
+						<a href="login.html" title='意见反馈'>意见反馈</a> &nbsp;
+						<a href="login.html" title='联系我们'>联系我们</a>  &nbsp;
+						<a href="login.html" title="使用条款">使用条款</a>  
+					</div>	
+				</div>
+			</div>
+		</div>
+
+		<!--左侧-->
+		<div class="leftside">
+			<a href="login.html" class="way1" title="facebook分享"><img src="img/img1/way01.jpg"  width="50" height="50" /></a>
+			<a href="login.html" class="way2" title="twitter分享"><img src="img/img1/way02.jpg"  width="50" height="50" /></a>
+			<a href="login.html" class="way3" title="Google分享"><img src="img/img1/way03.jpg" width="50" height="50" /></a>
+			<a href="login.html" class="way4" title="ins分享"><img src="img/img1/way04.jpg"  width="50" height="50" /></a>
+			<a href="login.html" class="way5" title="更多分享方式"><img src="img/img1/way05.jpg"  width="50" height="50" /></a>
+		</div>
+		
+		<!--返回顶部-->
+		<a href="#0" class="cd-top">Top</a>
+		
+		<script src="js/jquery.min.js"></script>
+		<script src="bootstrap3.1.1/js/bootstrap.min.js"></script>
+		
+		<script>
+			$(function(){
+				$('.leftside a').hover(function(){
+					$(this).animate({width:'65px'},300);	
+				},function(){
+					$(this).animate({width:'50px'},300);	
+				});
+			});
+		</script>
+	</body>
+</html>

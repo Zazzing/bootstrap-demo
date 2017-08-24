@@ -1,0 +1,593 @@
+body {
+	background: #fff;
+	padding:0;
+	margin:0;
+	font-family: "Microsoft YaHei", "微软雅黑", "Microsoft JhengHei", "华文宋体", STHeiti, verdana,arial, sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+div {
+    display: block;
+}
+p {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+.mainhead {
+	margin-top:80px;
+}
+.navbar-fixed-top {
+    background: #fff;
+    border-bottom: 1px solid #f9f9f9;
+}
+.navbar-header a {
+	text-decoration: none;
+}
+.mainhead-navbox {
+	height:60px;
+}
+.mainhead-navbox .navbar-brand {
+  float: left;
+  height: 60px;
+  padding: 0 0 0 15px;
+  font-size: 18px;
+  line-height: 55px;
+}
+.mainhead-navbox .navbar-brand a {
+	font-size:0.8em;
+}
+.mainhead-navbox .navbar-brand .mainhead-avatar {
+	margin:0;
+	margin:0!important; 
+}
+.mainhead-navbox .navbar-brand .mainhead-avatar img {
+	width:40px;
+	height:40px;
+}
+/*动态点赞开始*/
+.praise{
+    width:40px;
+    height:40px;
+    margin: 0 auto;
+    cursor: pointer;
+    font-size: 12px;
+    text-align:center;
+    position: relative;
+}
+#praise{
+    display:block;
+    width:40px;
+    height:40px;
+    margin:0 auto;
+}
+#praise-txt{
+    height:25px;
+    line-height:15px;
+    display: block;
+}
+.praise img{
+    width:30px;
+    height:30px;
+    display:block;
+    margin: 0 auto;
+}
+.praise img.animation{
+    animation: myfirst 0.5s;
+    -moz-animation: myfirst 0.5s;	/* Firefox */
+    -webkit-animation: myfirst 0.5s;	/* Safari 和 Chrome */
+    -o-animation: myfirst 0.5s;	/* Opera */
+}
+#add-num{
+    display:none;
+}
+#add-num .add-animation{
+    color: #000;
+    position:absolute;
+    top:-15px;
+    left: 10px;
+    font-size: 15px;
+    opacity: 0;
+    filter: Alpha(opacity=0);
+    -moz-opacity:0;
+    animation: mypraise 0.5s ;
+    -moz-animation: mypraise 0.5s ;	/* Firefox */
+    -webkit-animation: mypraise 0.5s ;	/* Safari 和 Chrome */
+    -o-animation: mypraise 0.5s ;	/* Opera */
+    font-style:normal;
+}
+.praise .hover , #add-num .add-animation.hover , #praise-txt.hover{
+    color: #EB4F38;
+}
+/*点赞图标放大动画开始*/
+@keyframes myfirst
+{
+    0%{
+        width:30px;
+        height:30px;
+    }
+    50%{
+        width:40px;
+        height:40px;
+    }
+    100% {
+        width:30px;
+        height:30px;
+    }
+}
+@-moz-keyframes myfirst /* Firefox */
+{
+    0%{
+        width:30px;
+        height:30px;
+    }
+    50%{
+        width:40px;
+        height:40px;
+    }
+    100% {
+        width:30px;
+        height:30px;
+    }
+}
+@-webkit-keyframes myfirst /* Safari 和 Chrome */
+{
+    0%{
+        width:30px;
+        height:30px;
+    }
+    50%{
+        width:40px;
+        height:40px;
+    }
+    100% {
+        width:30px;
+        height:30px;
+    }
+}
+@-o-keyframes myfirst /* Opera */
+{
+    0%{
+        width:30px;
+        height:30px;
+    }
+    50%{
+        width:40px;
+        height:40px;
+    }
+    100% {
+        width:30px;
+        height:30px;
+    }
+}
+/*点赞图标放大动画结束*/
+/*点赞数量加减动画开始*/
+@keyframes mypraise
+{
+    0%{
+        top:-15px;
+        opacity: 0;
+        filter: Alpha(opacity=0);
+        -moz-opacity:0;
+    }
+    25%{
+        top:-20px;
+        opacity: 0.5;
+        filter: Alpha(opacity=50);
+        -moz-opacity:0.5;
+    }
+    50%{
+        top:-25px;
+        opacity: 1;
+        filter: Alpha(opacity=100);
+        -moz-opacity:1;
+    }
+    75%{
+        top:-30px;
+        opacity: 0.5;
+        filter: Alpha(opacity=50);
+        -moz-opacity:0.5;
+    }
+    100% {
+        top:-35px;
+        opacity: 0;
+        filter: Alpha(opacity=0);
+        -moz-opacity:0;
+    }
+}
+@-moz-keyframes mypraise /* Firefox */
+{
+    0%{
+        top:-15px;
+        opacity: 0;
+        filter: Alpha(opacity=0);
+        -moz-opacity:0;
+    }
+    25%{
+        top:-20px;
+        opacity: 0.5;
+        filter: Alpha(opacity=50);
+        -moz-opacity:0.5;
+    }
+    50%{
+        top:-25px;
+        opacity: 1;
+        filter: Alpha(opacity=100);
+        -moz-opacity:1;
+    }
+    75%{
+        top:-30px;
+        opacity: 0.5;
+        filter: Alpha(opacity=50);
+        -moz-opacity:0.5;
+    }
+    100% {
+        top:-35px;
+        opacity: 0;
+        filter: Alpha(opacity=0);
+        -moz-opacity:0;
+    }
+}
+@-webkit-keyframes mypraise /* Safari 和 Chrome */
+{
+    0%{
+        top:-15px;
+        opacity: 0;
+        filter: Alpha(opacity=0);
+        -moz-opacity:0;
+    }
+    25%{
+        top:-20px;
+        opacity: 0.5;
+        filter: Alpha(opacity=50);
+        -moz-opacity:0.5;
+    }
+    50%{
+        top:-25px;
+        opacity: 1;
+        filter: Alpha(opacity=100);
+        -moz-opacity:1;
+    }
+    75%{
+        top:-30px;
+        opacity: 0.5;
+        filter: Alpha(opacity=50);
+        -moz-opacity:0.5;
+    }
+    100% {
+        top:-35px;
+        opacity: 0;
+        filter: Alpha(opacity=0);
+        -moz-opacity:0;
+    }
+}
+@-o-keyframes mypraise /* Opera */
+{
+    0%{
+        top:-15px;
+        opacity: 0;
+        filter: Alpha(opacity=0);
+        -moz-opacity:0;
+    }
+    25%{
+        top:-20px;
+        opacity: 0.5;
+        filter: Alpha(opacity=50);
+        -moz-opacity:0.5;
+    }
+    50%{
+        top:-25px;
+        opacity: 1;
+        filter: Alpha(opacity=100);
+        -moz-opacity:1;
+    }
+    75%{
+        top:-30px;
+        opacity: 0.5;
+        filter: Alpha(opacity=50);
+        -moz-opacity:0.5;
+    }
+    100% {
+        top:-35px;
+        opacity: 0;
+        filter: Alpha(opacity=0);
+        -moz-opacity:0;
+    }
+}
+/*点赞数量加减动画结束*/
+/*动态点赞结束*/
+.mainhead-nav > li {
+  display: inline-block;
+}
+.mainhead-nav > li + li {
+  margin-left: 20px;
+}
+.mainhead-nav > li > a {
+  padding-right: 1.2em;
+  padding-left: 1.2em;
+  font-size: 1.2em;
+  line-height: 50px;
+  font-weight: normal;
+  color: #999;
+  text-decoration: none;
+  text-shadow: none;
+  border-bottom: 3px solid transparent;
+}
+.mainhead-nav > li > a:hover,
+.mainhead-nav > li > a:focus,
+.mainhead-nav > .active > a,
+.mainhead-nav > .active > a:hover,
+.mainhead-nav > .active > a:focus {
+  color: #fff;
+  background:#333;
+  text-shadow: none;
+  border-bottom-color: #21aadd;
+}
+.mainhead-navbtn {
+  background: #fff;
+}
+.mainhead-navbtn:hover,
+.mainhead-navbtn:focus {
+  background: #f9f9f9;
+  background: #f9f9f9!important;
+}
+@media (max-width: 768px) {
+	.mainhead-collapse {
+		background: #edf0ef;
+	}
+  	.mainhead-nav {
+  		float: right;
+  	}
+	.mainhead-nav > li + li {
+    	margin-left: 1px;
+  	}
+  	.mainhead-nav > li > a {
+  		padding-right: 0.8em;
+  		padding-left: 0.8em;
+  		font-size: 1em;
+  		line-height: 50px;
+  		font-weight: normal;
+  		color: #999;
+  		text-decoration: none;
+  		text-shadow: none;
+  		border-bottom: 3px solid transparent;
+	}
+} 
+@media (min-width: 768px) {
+	.mainhead-brand {
+		float: left;
+	}
+  	.mainhead-nav {
+  		float: right;
+  	}
+}
+@media (min-width: 768px) {
+	.container { 
+		width: 768px;
+	}
+}
+@media (min-width: 992px) {
+	.container { 
+		width: 992px;
+	} 
+}
+@media (min-width: 1200px) {
+	.container { 
+		width: 1180px;
+	} 
+}
+.center {
+    text-align: center;
+    text-align: center!important;
+}
+.logbox {
+	margin-top:5em;
+}
+.sloganbox {
+	margin-top:1em;
+	margin-bottom:3em;
+}
+.sloganbox p {
+	color:#888;
+	line-height: 160%;
+}
+a.btn {
+	text-decoration: none;
+}
+.btn-hero {
+	color: #fff;
+	text-shadow: none; 
+  	background-color: #45d0c6;
+  	border: none;
+}
+.btn-hero:hover {
+	color:#fff;
+	background-color: #49c7be;
+}
+.radius-2
+{
+  -webkit-border-radius:2px;
+  -moz-border-radius:2px;
+  border-radius:2px
+}
+.thumbnail img:hover{
+	opacity: 0.4;
+}
+.margin-t10 {
+    margin-top: 10px;
+}
+.no-decoration {
+    text-decoration: none;
+}
+.maincontent {
+    background: #fff;
+    padding-bottom: 5em;
+    height: auto;
+}
+.mainbody{
+	overflow: hidden;
+}
+.padding-t20 {
+    padding-top: 30px;
+}
+.row{
+	overflow: hidden;
+}
+.margin-b20 {
+    margin-bottom: 20px;
+}
+.margin-b0 {
+    margin-bottom: 0;
+}
+.border-0 {
+    border: 0;
+    border: none;
+}
+.radius-0 {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    border-radius: none;
+}
+.iteminfo {
+    font-size: 0.9em;
+    color: #bbb;
+    margin-top: 0.5em;
+}
+.text-left {
+    text-align: left;
+    text-align: left!important;
+}
+.iteminfo p {
+    font-weight: normal;
+    font-size: 1.2em;
+    color: #555;
+    text-decoration: none;
+}
+.margin-t0 {
+    margin-top: 0;
+}
+.text-right {
+    text-align: right;
+    text-align: right!important;
+}
+.margin20 {
+    margin: 20px;
+}
+.margin-t10 {
+    margin-top: 10px;
+}
+.btn-gray {
+    color: #fff;
+    text-shadow: none;
+    background-color: #45d0c6;
+    border: 0;
+}
+.btn-gray:hover {
+    background-color: #A6E1EC;
+}
+.btn {
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+.radius-2 {
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+.mainfoot, .mainfoot a {
+    color: #bcb9b2;
+}
+.mainfoot {
+    min-height: 200px;
+    padding-top: 1em;
+}
+.mainfoot .partnerbox {
+    color: #ddd;
+    padding-top: 1em;
+    padding-bottom: 0.8em;
+    margin-top: 5em;
+    background: #fff;
+}
+.mainfoot .partnerbox a {
+    color: #ccc;
+}
+.mainfoot, .mainfoot a {
+    color: #999999;
+}
+
+/*左侧*/
+.leftside { 
+	width:50px; 
+	height:250px; 
+	position:fixed; 
+	left:0; 
+	top:50%; 
+	margin-top:-125px; 
+	z-index:900;
+}
+.leftside a { 
+	width:50px; 
+	height:50px; 
+	line-height:50px; 
+	float:left; 
+	display:block; 
+	text-align:right;
+}
+.leftside .way1 { 
+	background:#305790;
+}
+.leftside .way2 { 
+	background:#2BA9D2;
+}
+.leftside .way3 { 
+	background:#CF4C3A;
+}
+.leftside .way4 { 
+	background:#4698CA;
+}
+.leftside .way5 { 
+	background:#F9694E;
+}
+/*返回顶部*/
+.cd-top.cd-fade-out {
+    opacity: .5;
+}
+.cd-top.cd-is-visible {
+    visibility: visible;
+    opacity: 1;
+}
+@media only screen and (min-width: 1024px)
+.cd-top {
+    height: 60px;
+    width: 60px;
+    right: 30px;
+    bottom: 30px;
+}
+@media only screen and (min-width: 768px)
+.cd-top {
+    right: 20px;
+    bottom: 20px;
+}
+.cd-top {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    bottom: 40px;
+    right: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    background: rgba(232, 98, 86, 0.8) url(../img/common/cd-top-arrow.svg) no-repeat center 50%;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}

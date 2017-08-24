@@ -1,0 +1,66 @@
+body {
+	background: pink;
+	padding:0;
+	margin:0;
+	font-family: "Microsoft YaHei", "微软雅黑", "Microsoft JhengHei", "华文宋体", STHeiti, verdana,arial, sans-serif;
+}
+li{
+	list-style-type: none;
+	padding: 10px 0;
+}
+.form-horizontal {
+	margin-top: 100px;
+	padding-top: 15px;
+    background: #fff;
+    padding-bottom: 40px;
+    border-radius: 15px;
+    text-align: center;
+}
+.form-horizontal .heading {
+    display: block;
+    font-size: 28px;
+    font-weight: 700;
+    padding: 35px 0;
+    border-bottom: 1px solid #f0f0f0;
+    margin-bottom: 30px;
+    color:#269ABC;
+}
+.form-horizontal .form-group {
+    padding: 0 40px;
+    margin: 0 0 25px 0;
+    position: relative;
+}
+.form-horizontal .form-control {
+    background: #f0f0f0;
+    border: none;
+    border-radius: 20px;
+    box-shadow: none;
+    padding: 0 20px 0 45px;
+    height: 40px;
+    transition: all 0.3s ease 0s;
+    display: block;
+    width: 100%;
+    color: #ADADAD;
+}
+.form-horizontal .li3 {
+    text-align: right;
+    font-size: 12px;
+    padding: 10px 0;
+}
+.li4 .submit {
+    display: block;
+    width: 100%;
+    padding: 7px 0;
+    border: 0 none;
+    color: #fff;
+    background-color: #269ABC;
+    cursor: pointer;
+}
+.visitor{
+	font-size: 15px;
+	color: #269ABC;
+}
+.visitor:hover{
+	text-decoration: none;
+	color: #2A6496;
+}
